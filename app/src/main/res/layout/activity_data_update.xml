@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        tools:context=".DataUpdate">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="180dp"
+                android:text="UPDATE DATA"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/NID"
+                android:layout_width="360dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="36dp"
+                android:background="@drawable/input"
+                android:hint="NID"
+                android:inputType="number"
+                android:paddingLeft="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <EditText
+                android:id="@+id/Name"
+                android:layout_width="360dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/input"
+                android:hint="Name"
+                android:paddingLeft="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/NID" />
+
+            <EditText
+                android:id="@+id/Gender"
+                android:layout_width="360dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/input"
+                android:hint="Gender"
+                android:paddingLeft="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Name" />
+
+            <EditText
+                android:id="@+id/Age"
+                android:layout_width="360dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/input"
+                android:hint="Age"
+                android:inputType="number"
+                android:paddingLeft="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/Gender" />
+
+            <Button
+                android:id="@+id/updateBtn"
+                android:layout_width="360dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="612dp"
+                android:backgroundTint="@android:color/holo_red_dark"
+                android:text="Update Data"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+
